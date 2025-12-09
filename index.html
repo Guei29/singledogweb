@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>單身狗保護協會 - 作戰本部</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"> <img src="images/logo.png" alt="單身狗保護協會" id="logo"></a>
+      <ul id="main-menu">
+        <li><a href="index.html">作戰本部</a></li>
+        <li class="dropdown">
+          <a href="#">組織資訊 ▼</a>
+          <ul class="dropdown-content">
+              <li><a href="about.html">組織沿革</a></li>
+              <li><a href="join_us.html">入團申請</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">作戰情報 ▼</a>
+          <ul class="dropdown-content">
+              <li><a href="danger_zone.html">禁區地圖</a></li>
+              <li><a href="rituals.html">公會集會</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">魔法修煉 ▼</a>
+          <ul class="dropdown-content">
+              <li><a href="equipment.html">防禦裝備</a></li>
+              <li><a href="ranks.html">軍階制度</a></li>
+              <li><a href="survival_guide.html">生存魔導書</a></li>
+          </ul>
+        </li>
+        <li><a href="goodcard.html">好人卡展示牆</a></li>
+        <li class="dropdown">
+          <a href="#">互動模組 ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="oracle.html">每日神諭</a></li>
+            <li><a href="simulator.html">互動模擬室</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="images/頁首橫幅.png" alt="img" class="banner">
+  <main>
+    <div class="info-row">
+      <section class="news">
+      <h2>最新公告</h2>
+        <ul>
+          <li class="news-item" 
+              data-title="情人節特殊任務啟動" 
+              data-content="針對即將到來的 2/14，本協會將發放墨鏡與耳塞。請各位會員於當日至作戰本部領取，並至街頭執行「無視放閃」任務。">
+              2026/02/14：情人節特殊任務啟動
+          </li>
+
+          <li class="news-item" 
+              data-title="紅色警戒啟動" 
+              data-content="聖誕節將近，偵測到街道閃光指數急劇上升。建議會員儲備糧食，非必要請勿出門，以免遭受心靈爆擊。">
+              聖誕節將近，紅色警戒啟動。
+          </li>
+        </ul>
+      </section>
+  
+      <section class="countdown">
+        <h2>閃光大劫日倒數</h2>
+        <div id="countdown"></div>
+      </section>
+    </div>
+  </main>
+
+  <audio id="bgm" loop>
+      <source src="music/lonely christmas.mp3" type="audio/mp4">
+  </audio>
+
+  <footer> <p>單身狗保護協會 © 2025</p></footer>
+</body>
+</html>

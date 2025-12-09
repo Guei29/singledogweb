@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>防禦裝備 - 單身狗保護協會</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="單身狗保護協會" id="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">作戰本部</a></li>
+                <li class="dropdown">
+                  <a href="#">組織資訊 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="about.html">組織沿革</a></li>
+                      <li><a href="join_us.html">入團申請</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">作戰情報 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="danger_zone.html">禁區地圖</a></li>
+                      <li><a href="rituals.html">公會集會</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">魔法修煉 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="equipment.html">防禦裝備</a></li>
+                      <li><a href="ranks.html">軍階制度</a></li>
+                      <li><a href="survival_guide.html">生存魔導書</a></li>
+                  </ul>
+                </li>
+                <li><a href="goodcard.html">好人卡展示牆</a></li>
+                <li class="dropdown">
+                  <a href="#">互動模組 ▼</a>
+                  <ul class="dropdown-content">
+                    <li><a href="oracle.html">每日神諭</a></li>
+                    <li><a href="simulator.html">互動模擬室</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>防禦裝備圖鑑</h1>
+        <p>選購你的防閃光裝備，守護你的單身財富！</p>
+
+        <div id="status-area">
+            <p>💵 你的單身財富 : <span id="wallet-balance" class="red">0 G</span></p>
+            <p>🛒 當前購買總價 : <span id="total-price" class="red">0 G</span></p>
+            <p>🛒 當前購物車商品(數量) : <span id="total-equipment" class="red">無</span></p>
+            
+            <button id="checkout-btn" disabled>確認購買並部署</button>
+            <button id="clear-cart-btn" disabled>清空購物車</button>
+        </div>
+
+        <br><br>
+
+        <div id="equipment-list"class="equipment-list">
+            <div class="item" data-id="1" data-price="500"  data-name="虛空護目鏡">
+                <img src="images/護目鏡.png" alt="虛空護目鏡">
+                <h3>虛空護目鏡</h3>
+                <p class="price-tag">價格: <span class="red">500 G</span></p>
+                <p>由冷漠晶體打造，能過濾掉視野中 99.9% 的 PDA 輻射，使用者雙眼所見只剩程式碼。</p>
+                <button class="add-to-cart-btn" data-id="1"> 部署 (+500 G) </button>
+            </div>
+
+            <div class="item" data-id="2" data-price="350">
+                <img src="images/耳塞.png" alt="靜謐結界耳塞">
+                <h3>靜謐結界耳塞</h3>
+                <p class="price-tag">價格: <span class="red">350 G</span></p>
+                <p>創造一個半徑 2 米的個人結界，屏蔽所有外界噪音與情侶低語。</p>
+                <button class="add-to-cart-btn" data-id="2"> 部署 (+350 G) </button>
+            </div>
+
+            <div class="item" data-id="3" data-price="500">
+                <img src="images/吊飾.png" alt="專注符文">
+                <h3>專注符文</h3>
+                <p class="price-tag">價格: <span class="red">500 G</span></p>
+                <p>貼在電腦螢幕旁。啟動後能大幅提升程式編寫效率，屏蔽所有關於社交和陪伴的雜念。</p>
+                <button class="add-to-cart-btn" data-id="3"> 部署 (+500 G) </button>
+            </div>
+
+            <div class="item" data-id="4" data-price="250">
+                <img src="images/毯子.png" alt="暖心咒語毯">
+                <h3>暖心咒語毯</h3>
+                <p class="price-tag">價格: <span class="red">250 G</span></p>
+                <p>織入自給自足的符文，自動調整到最舒適的溫度，消除對體溫的渴求。</p>
+                <button class="add-to-cart-btn" data-id="4"> 部署 (+250 G) </button>
+            </div>
+
+            <div class="item" data-id="5" data-price="50">
+                <img src="images/泡麵.png" alt="獨行者糧食">
+                <h3>獨行者糧食</h3>
+                <p class="price-tag">價格: <span class="red">50 G</span></p>
+                <p>蘊含著 200% 的獨立自主能量，是維持高階魔法師生命的必需品。</p>
+                <button class="add-to-cart-btn" data-id="5"> 部署 (+50 G) </button>
+            </div>
+
+            <div class="item" data-id="6" data-price="50">
+                <img src="images/墊子.png" alt="孤食結界符文墊">
+                <h3>『孤食結界』符文墊</h3>
+                <p class="price-tag">價格: <span class="red">50 G</span></p>
+                <p>專為單人用餐設計。生成透明結界，使服務員不敢推銷雙人套餐，並自動隔絕鄰桌情侶的聲音。</p>
+                <button class="add-to-cart-btn" data-id="6"> 部署 (+50 G) </button>
+            </div>
+            
+        </div>
+    </main>
+
+    <audio id="bgm" loop>
+        <source src="music/Adventure.mp3" type="audio/mp4">
+    </audio>
+    
+    <footer><p>單身狗保護協會 © 2025</p></footer>
+</body>
+</html>

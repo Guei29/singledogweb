@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>軍階制度 - 單身狗保護協會</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="單身狗保護協會" id="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">作戰本部</a></li>
+                <li class="dropdown">
+                  <a href="#">組織資訊 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="about.html">組織沿革</a></li>
+                      <li><a href="join_us.html">入團申請</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">作戰情報 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="danger_zone.html">禁區地圖</a></li>
+                      <li><a href="rituals.html">公會集會</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">魔法修煉 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="equipment.html">防禦裝備</a></li>
+                      <li><a href="ranks.html">軍階制度</a></li>
+                      <li><a href="survival_guide.html">生存魔導書</a></li>
+                  </ul>
+                </li>
+                <li><a href="goodcard.html">好人卡展示牆</a></li>
+                <li class="dropdown">
+                  <a href="#">互動模組 ▼</a>
+                  <ul class="dropdown-content">
+                    <li><a href="oracle.html">每日神諭</a></li>
+                    <li><a href="simulator.html">互動模擬室</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>軍階制度</h1>
+
+       <section>
+            <h2>單身年資計算機</h2>
+            <p>輸入你的「回歸單身年份」，計算你的單身年資，並查看你的稱號！</p>
+            
+            <input type="number" id="age" placeholder="輸入年份 (例如: 1995)" min="1000">
+            <br><br>
+            
+            <button id="calcBtn">計算</button>
+            <p id="result"></p>
+        </section>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>單身年資</th>
+                    <th>稱號</th>
+                    <th>簡介</th>
+                    <th>特殊能力</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0-5</td>
+                    <td>魔法學徒</td>
+                    <td>初入單身界的新手，心智尚不穩定。偶爾還會對聖誕節或情人節抱有一絲脫單的幻想，容易被路邊的情侶重創。</td>
+                    <td>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.心.png" alt="心" class="special-skill">
+                            <div class="detail-tooltip">【微弱抵抗】<p>看到情侶牽手時，心痛值降低 5%。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.屏障.png" alt="屏障" class="special-skill">
+                            <div class="detail-tooltip">【視網膜屏障】<p>自動過濾視野中的粉紅泡泡。</p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6-15</td>
+                    <td>高階魔法使</td>
+                    <td>已完全適應獨自吃飯、看電影的節奏。面對親戚長輩的「有對象沒？」問候攻勢，能面不改色地敷衍過去。</td>
+                    <td>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.心.png" alt="心" class="special-skill">
+                            <div class="detail-tooltip">【微弱抵抗】<p>看到情侶牽手時，心痛值降低 5%。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.屏障.png" alt="屏障" class="special-skill">
+                            <div class="detail-tooltip">【視網膜屏障】<p>自動過濾視野中的粉紅泡泡。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.錢包.png" alt="錢包" class="special-skill">
+                            <div class="detail-tooltip">【錢包守護】<p>因為沒人可送禮，存款累積速度+200%。</p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16-29</td>
+                    <td>孤高大法師</td>
+                    <td>徹底看破紅塵，將原本用於約會的資金全數轉為遊戲課金或美食。視網膜已進化，會自動過濾視野中的放閃畫面。</td>
+                    <td>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.心.png" alt="心" class="special-skill">
+                            <div class="detail-tooltip">【微弱抵抗】<p>看到情侶牽手時，心痛值降低 5%。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.屏障.png" alt="屏障" class="special-skill">
+                            <div class="detail-tooltip">【視網膜屏障】<p>自動過濾視野中的粉紅泡泡。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.錢包.png" alt="錢包" class="special-skill">
+                            <div class="detail-tooltip">【錢包守護】<p>因為沒人可送禮，存款累積速度+200%。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.領域.png" alt="領域" class="special-skill">
+                            <div class="detail-tooltip">【絕對領域】<p>已看破紅塵，這世界再無任何閃光能傷害你。</p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>30 以上</td>
+                    <td>傳奇賢者</td>
+                    <td>傳說中只要保持童貞 30 歲就能轉職的境界。已超越人類情感需求，達到「無我」的狀態，甚至開始覺得三次元人類很麻煩。</td>
+                    <td>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.心.png" alt="心" class="special-skill">
+                            <div class="detail-tooltip">【微弱抵抗】<p>看到情侶牽手時，心痛值降低 5%。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.屏障.png" alt="屏障" class="special-skill">
+                            <div class="detail-tooltip">【視網膜屏障】<p>自動過濾視野中的粉紅泡泡。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.錢包.png" alt="錢包" class="special-skill">
+                            <div class="detail-tooltip">【錢包守護】<p>因為沒人可送禮，存款累積速度+200%。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.領域.png" alt="領域" class="special-skill">
+                            <div class="detail-tooltip">【絕對領域】<p>已看破紅塵，這世界再無任何閃光能傷害你。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.火球.png" alt="火球" class="special-skill">
+                            <div class="detail-tooltip">【火球術】<p>攻擊五米內情侶，導致情侶厄運一次。</p></div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <img src="images/特殊技能.空間.png" alt="空間" class="special-skill">
+                            <div class="detail-tooltip">【空間扭曲】<p>讓你在情侶密集區瞬間移動 5 公尺（躲進巷子或轉角）。</p></div>
+                         </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <audio id="bgm" loop>
+        <source src="music/Wii.mp3" type="audio/mp4">
+    </audio>
+    
+    <footer> <p>單身狗保護協會 © 2025</p> </footer>
+</body>
+</html>

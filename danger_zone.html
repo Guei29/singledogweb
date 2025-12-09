@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>禁區地圖 - 單身狗保護協會</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="單身狗保護協會" id="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">作戰本部</a></li>
+                <li class="dropdown">
+                  <a href="#">組織資訊 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="about.html">組織沿革</a></li>
+                      <li><a href="join_us.html">入團申請</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">作戰情報 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="danger_zone.html">禁區地圖</a></li>
+                      <li><a href="rituals.html">公會集會</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">魔法修煉 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="equipment.html">防禦裝備</a></li>
+                      <li><a href="ranks.html">軍階制度</a></li>
+                      <li><a href="survival_guide.html">生存魔導書</a></li>
+                  </ul>
+                </li>
+                <li><a href="goodcard.html">好人卡展示牆</a></li>
+                <li class="dropdown">
+                  <a href="#">互動模組 ▼</a>
+                  <ul class="dropdown-content">
+                    <li><a href="oracle.html">每日神諭</a></li>
+                    <li><a href="simulator.html">互動模擬室</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>危險區域情報</h1>
+        <p>以下是協會收集的高閃光輻射區域，請會員提高警覺！</p>
+        <div class="control-area">
+            <label for="zone-selector">選擇作戰區域：</label>
+            <select id="zone-selector" onchange="filterTables()">
+                <option value="all">顯示所有危險區域 (All Zones)</option>
+                <option value="chengda">成大校區熱點</option>
+                <option value="city">市區/校外熱點</option>
+                </select>
+        </div>
+
+        <table id="table-chengda" class="danger-table" border="1">
+            <tr>
+                <th>Zone</th>
+                <th>閃光輻射 Level</th>
+                <th>Peak Time</th>
+                <th>建議策略</th>
+            </tr>
+            <tr>
+                <td>成大圖書館</td>
+                <td>⭐⭐</td>
+                <td>考試週前夕 (21:00 - 00:00)</td>
+                <td>假裝考試ppt是你的情人，全程佩戴耳機進行心靈隔絕。</td>
+            </tr>
+            <tr>
+                <td>成大太子學舍大廳</td>
+                <td>⭐⭐⭐</td>
+                <td>晚間 (19:00 - 23:00)</td>
+                <td>全速通過，裝作正在接聽「總部急電」，展現堅定的任務目標。</td>
+            </tr>
+            <tr>
+                <td>成大勝後 (勝利校區後方)</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>晚餐至半夜時段</td>
+                <td>外帶速離，避免在該區停留超過 5 分鐘，使用食物作為心靈慰藉。</td>
+            </tr>
+            <tr>
+                <td>成大光復操場</td>
+                <td>⭐⭐</td>
+                <td>晚間慢跑時段 (19:00 - 21:00)</td>
+                <td>專注於跑步計時器，進行體能特訓，勿回頭，將目光鎖定在單人目標上。</td>
+            </tr>
+            <tr>
+                <td>成大聖誕樹 (未來館)</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>聖誕節前後整週</td>
+                <td>戰略性撤退。請立即躲進宿舍或圖書館好好讀書，直到危險解除為止。</td>
+            </tr>
+        </table>
+
+        <table id="table-city" class="danger-table" border="1">
+            <tr>
+                <th>Zone</th>
+                <th>閃光輻射 Level</th>
+                <th>Peak Time</th>
+                <th>建議策略</th>
+            </tr>
+            <tr>
+                <td>漁光島</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>日落時分至凌晨</td>
+                <td>絕對禁區。該時段嚴禁單人任務，建議切斷所有網路訊號，進行物理隔離。</td>
+            </tr>
+            <tr>
+                <td>南紡威秀影城</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>週末與節日晚間 (18:00 - 22:00)</td>
+                <td>戰鬥模式。購買中間座位意圖拆散情侶，專注於銀幕與劇情，絕對避免查看影廳外等候區。</td>
+            </tr>
+        </table>
+        
+        <table id="table-all" class="danger-table"border="1">
+            <tr>
+                <th>Zone</th>
+                <th>閃光輻射 Level</th>
+                <th>Peak Time</th>
+                <th>建議策略</th>
+            </tr>
+            <tr>
+                <td>成大圖書館</td>
+                <td>⭐⭐</td>
+                <td>考試週前夕 (21:00 - 00:00)</td>
+                <td>假裝考試ppt是你的情人，全程佩戴耳機進行心靈隔絕。</td>
+            </tr>
+            <tr>
+                <td>成大太子學舍大廳</td>
+                <td>⭐⭐⭐</td>
+                <td>晚間 (19:00 - 23:00)</td>
+                <td>全速通過，裝作正在接聽「總部急電」，展現堅定的任務目標。</td>
+            </tr>
+            <tr>
+                <td>漁光島</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>日落時分至凌晨</td>
+                <td>絕對禁區。該時段嚴禁單人任務，建議切斷所有網路訊號，進行物理隔離。</td>
+            </tr>
+            <tr>
+                <td>成大勝後 (勝利校區後方)</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>晚餐至半夜時段</td>
+                <td>外帶速離，避免在該區停留超過 5 分鐘，使用食物作為心靈慰藉。</td>
+            </tr>
+            <tr>
+                <td>成大光復操場</td>
+                <td>⭐⭐</td>
+                <td>晚間慢跑時段 (19:00 - 21:00)</td>
+                <td>專注於跑步計時器，進行體能特訓，勿回頭，將目光鎖定在單人目標上。</td>
+            </tr>
+            <tr>
+                <td>成大聖誕樹 (未來館)</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>聖誕節前後整週</td>
+                <td>戰略性撤退。請立即躲進宿舍或圖書館好好讀書，直到危險解除為止。</td>
+            </tr>
+            <tr>
+                <td>南紡威秀影城</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>週末與節日晚間 (18:00 - 22:00)</td>
+                <td>戰鬥模式。購買中間座位意圖拆散情侶，專注於銀幕與劇情，絕對避免查看影廳外等候區。</td>
+            </tr>
+        </table>
+
+        <section>
+            <h2>地圖位置</h2>
+            <p>點擊下方按鈕，鎖定危險熱點的實際地圖位置</p>
+            <div id="map-stage-list" class="map-source-list"></div><br>
+            <div id="map" class="map-container"></div>
+        </section>
+    </main>
+
+    <audio id="bgm" loop>
+        <<source src="music/The rumbling.m4a" type="audio/mp4">
+        <!--<<source src="music/eerie.m4a" type="audio/mp4">-->
+    </audio>
+    
+    <footer><p>單身狗保護協會 © 2025</p></footer>
+</body>
+</html>

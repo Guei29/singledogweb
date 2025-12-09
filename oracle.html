@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>每日神諭 - 單身狗保護協會</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="單身狗保護協會" id="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">作戰本部</a></li>
+                <li class="dropdown">
+                  <a href="#">組織資訊 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="about.html">組織沿革</a></li>
+                      <li><a href="join_us.html">入團申請</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">作戰情報 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="danger_zone.html">禁區地圖</a></li>
+                      <li><a href="rituals.html">公會集會</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">魔法修煉 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="equipment.html">防禦裝備</a></li>
+                      <li><a href="ranks.html">軍階制度</a></li>
+                      <li><a href="survival_guide.html">生存魔導書</a></li>
+                  </ul>
+                </li>
+                <li><a href="goodcard.html">好人卡展示牆</a></li>
+                <li class="dropdown">
+                  <a href="#">互動模組 ▼</a>
+                  <ul class="dropdown-content">
+                    <li><a href="oracle.html">每日神諭</a></li>
+                    <li><a href="simulator.html">互動模擬室</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>今日神諭</h1>
+        <p id="oracle-prompt">點擊水晶球獲得你的每日預言</p>
+        <div id="crystal-ball">🔮</div>
+        <p id="oracle-result"></p>
+        <!--<audio id="mario-sound" src="music/Mario.m4a" type="audio/mp4"></audio>-->
+        <audio id="drawing-sound" src="music/drawlot.m4a" type="audio/mp4"></audio>
+        <audio id="reveal-sound" src="music/result.m4a"type="audio/mp4"></audio>
+
+        <hr>
+        
+        <section class="resentment-box">
+            <h2>怨念值累加器</h2>
+            <button id="resentBtn">怨念 +1</button>
+            <p>目前怨念：<span id="resentCount">0</span></p>
+            <audio id="coin-sound" src="music/coin.mp3"></audio>
+        </section>
+    </main>
+
+    <!--<audio id="cat-sound" src="music/uiiaia.m4a"></audio>-->
+    <footer>
+        <p>單身狗保護協會 © 2025</p>
+    </footer>
+</body>
+
+</html>

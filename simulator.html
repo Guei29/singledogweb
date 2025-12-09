@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互動模擬室：直男、脫單與邪門 CP 產生</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="單身狗保護協會" id="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">作戰本部</a></li>
+                <li class="dropdown">
+                  <a href="#">組織資訊 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="about.html">組織沿革</a></li>
+                      <li><a href="join_us.html">入團申請</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">作戰情報 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="danger_zone.html">禁區地圖</a></li>
+                      <li><a href="rituals.html">公會集會</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">魔法修煉 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="equipment.html">防禦裝備</a></li>
+                      <li><a href="ranks.html">軍階制度</a></li>
+                      <li><a href="survival_guide.html">生存魔導書</a></li>
+                  </ul>
+                </li>
+                <li><a href="goodcard.html">好人卡展示牆</a></li>
+                <li class="dropdown">
+                  <a href="#">互動模組 ▼</a>
+                  <ul class="dropdown-content">
+                    <li><a href="oracle.html">每日神諭</a></li>
+                    <li><a href="simulator.html">互動模擬室</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🎮 互動模擬室</h1>
+        <p class="intro-text">想要憑實力單身？還是想見證跨越次元的邪門愛情？<br>這裡提供最專業的模擬訓練。</p>
+
+        <section class="game-container" id="straight-simulator">
+            <div class="game-header">
+                <h2>💔 憑實力單身：直男/直女模擬器</h2>
+                <div class="score-board">
+                    <span>目前單身指數：</span>
+                    <span id="score-display">0</span>
+                </div>
+            </div>
+
+            <div id="quiz-area">
+                <div class="question-box">
+                    <h3 id="question-text">題目載入中...</h3>
+                </div>
+                <div class="options-grid" id="options-container">
+                    </div>
+                <div id="feedback-msg" class="feedback"></div>
+                <button id="next-btn" class="action-btn hidden">下一題</button>
+            </div>
+
+            <div id="result-area" class="hidden">
+                <h3 id="final-title"></h3>
+                <p id="final-desc"></p>
+                <button id="restart-btn" class="action-btn">重新修煉</button>
+            </div>
+        </section>
+
+        <section class="game-container" id="cursed-cp-game">
+            <div class="game-header">
+                <h2>💞 邪門 CP 產生器</h2>
+                <p>系統隨機配對兩位跨次元角色，請根據提示猜出這對令人跌破眼鏡的組合。</p>
+            </div>
+
+            <div class="cp-battle-stage">
+                <div class="cp-card">
+                    <div class="avatar left-avatar">?</div>
+                    <div class="hint-box">
+                        <h4>角色 A 提示：</h4>
+                        <p id="hint-a">Loading...</p>
+                    </div>
+                    <input type="text" id="input-a" placeholder="輸入角色 A 名字">
+                </div>
+
+                <div class="vs-icon">⚡ VS ⚡</div>
+
+                <div class="cp-card">
+                    <div class="avatar right-avatar">?</div>
+                    <div class="hint-box">
+                        <h4>角色 B 提示：</h4>
+                        <p id="hint-b">Loading...</p>
+                    </div>
+                    <input type="text" id="input-b" placeholder="輸入角色 B 名字">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="check-cp-btn" class="action-btn">提交猜測</button>
+                <button id="reveal-cp-btn" class="secondary-btn">放棄治療（看答案）</button>
+                <button id="next-cp-btn" class="secondary-btn">下一對 CP</button>
+            </div>
+
+            <div id="cp-result" class="feedback"></div>
+        </section>
+
+    </main>
+
+    <audio id="cp-correct-sound" src="music/oiiaoiia.m4a"></audio>
+    <audio id="sound-high-score" src="music/victory.mp3"></audio> 
+    <audio id="sound-mid-score" src="music/normal.mp3"></audio>
+    <audio id="sound-low-score" src="music/fail.mp3"></audio>
+    
+    <footer>
+        <p>單身狗保護協會 © 2025</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>公會集會 - 單身狗保護協會</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="單身狗保護協會" id="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">作戰本部</a></li>
+                <li class="dropdown">
+                  <a href="#">組織資訊 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="about.html">組織沿革</a></li>
+                      <li><a href="join_us.html">入團申請</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">作戰情報 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="danger_zone.html">禁區地圖</a></li>
+                      <li><a href="rituals.html">公會集會</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">魔法修煉 ▼</a>
+                  <ul class="dropdown-content">
+                      <li><a href="equipment.html">防禦裝備</a></li>
+                      <li><a href="ranks.html">軍階制度</a></li>
+                      <li><a href="survival_guide.html">生存魔導書</a></li>
+                  </ul>
+                </li>
+                <li><a href="goodcard.html">好人卡展示牆</a></li>
+                <li class="dropdown">
+                  <a href="#">互動模組 ▼</a>
+                  <ul class="dropdown-content">
+                    <li><a href="oracle.html">每日神諭</a></li>
+                    <li><a href="simulator.html">互動模擬室</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>公會集會</h1>
+
+        <p>以下是本協會近期的重要儀式與活動，請各位魔法師隨時準備應戰。</p>
+
+        <div class="ritual-card" data-date="2025-12-30" data-current="11" data-max="12" data-title="月圓狼人殺夜">
+            <div class="ritual-image-side">
+                <img src="images/1230.png" alt="月圓狼人殺夜" class="ritual-img">
+            </div>
+            <div class="ritual-details-side">
+                <h3>月圓狼人殺夜 (Full Moon Werewolf Night)</h3>
+                <p><strong>儀式日期：</strong> 2025 年 12 月 30 日 (明日滿月・冷月 Cold Moon)</p>
+                <p class="ritual-count"><strong>報名人數：</strong> 已預約 11 人 / 限額 12 人</p>
+                <div class="ritual-intro">
+                    <h4>儀式介紹：</h4>
+                    <p>「根據星象廳觀測，12月30日是 2025 年最後一次『冷月 (Cold Moon)』，陰氣極重，最適合魔法師修煉。 我們不談私情，只談邏輯推理。今晚，沒有人會因為你單身而投票把你投出去。 」</p>
+                </div>
+                <div class="ritual-status-area">
+                    <button class="status-btn ritual-action-btn">讀取狀態中...</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ritual-card" data-date="2026-02-14" data-current="1402" data-max="99999" data-title="聖瓦倫丁避難大會">
+            <div class="ritual-image-side">
+                <img src="images/0214.png" alt="聖瓦倫丁避難大會" class="ritual-img">
+            </div>
+            <div class="ritual-details-side">
+                <h3>聖瓦倫丁避難大會 (The Anti-Valentine Bunker)</h3>
+                <p><strong>儀式日期：</strong> 2026 年 2 月 14 日 (週六)</p>
+                <p class="ritual-count"><strong>報名人數：</strong> 已預約 1,402 人 / 無限額 (避難所擴建中)</p>
+                <div class="ritual-intro">
+                    <h4>儀式介紹：</h4>
+                    <p>「警告：偵測到兩個月後將有大規模『粉紅閃光輻射』襲擊地表。 本協會已租下地下防空洞（或 KTV 大包廂），提供無限量的可樂、炸雞與 B 級恐怖片。 在這裡，我們慶祝的是『自由』。 入場口令： 喊出『現充都爆炸吧』即可獲得入場手環。」</p>
+                </div>
+                <div class="ritual-status-area">
+                    <button class="status-btn ritual-action-btn">讀取狀態中...</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ritual-card" data-date="2025-11-11" data-current="5566" data-max="99999" data-title="雙 11 魔力增幅祭">
+            <div class="ritual-image-side">
+                <img src="images/1111.png" alt="雙 11 魔力增幅祭" class="ritual-img">
+            </div>
+            <div class="ritual-details-side">
+                <h3>雙 11 魔力增幅祭 (Double 11 Mana Amplification)</h3>
+                <p><strong>儀式日期：</strong> 2025 年 11 月 11 日</p>
+                <p class="ritual-count"><strong>報名人數：</strong> 參與者 5,566 人</p>
+                <div class="ritual-intro">
+                    <h4>儀式介紹：</h4>
+                    <p>「一年一度魔力最強的時刻已過。感謝各位魔法師的參與，我們成功將原本要買禮物送給另一半的預算，全部轉化為自己的裝備（顯卡、遊戲機、高級模型）。 戰績結算： 本次祭典人均消費提升 200%，成功守護了荷包的尊嚴（雖然它瘦了）。期待明年再戰。」</p>
+                </div>
+                <div class="ritual-status-area">
+                    <button class="status-btn ritual-action-btn">讀取狀態中...</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <audio id="bgm" loop>
+          <source src="music/ameno.mp3" type="audio/mp4">
+    </audio>
+    
+    <footer>
+        <p>單身狗保護協會 © 2025</p>
+    </footer>
+</body>
+
+</html>
